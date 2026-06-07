@@ -1,0 +1,7 @@
+interface:
+  display_name: "Health Self-Investigation"
+  short_description: "Investigate symptoms with tracking and tests"
+  default_prompt: "Use $health-self-investigation to help me investigate an ambiguous health symptom."
+
+policy:
+  allow_implicit_invocation: true
