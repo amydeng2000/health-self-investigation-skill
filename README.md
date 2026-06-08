@@ -1,6 +1,6 @@
 # Health Self-Investigation Skill
 
-A Codex skill for investigating ambiguous, non-emergency health symptoms through intake, tracking, testing, analysis, and careful experiment planning.
+A Codex and Claude Code skill for investigating ambiguous, non-emergency health symptoms through intake, tracking, testing, analysis, and careful experiment planning.
 
 The skill is designed to reduce activation energy for people who want to act on vague health questions like "I've been feeling more tired lately" without jumping straight to premature conclusions or unsafe experiments.
 
@@ -24,7 +24,22 @@ $skill-installer install https://github.com/YOUR-USER/health-self-investigation-
 
 Then restart Codex so the skill is loaded.
 
-## Use Without Codex
+## Install In Claude Code
+
+Copy the Claude Code skill folder into your Claude skills directory:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R claude-skills/health-self-investigation ~/.claude/skills/
+```
+
+Then restart Claude Code. Invoke it with:
+
+```text
+/health-self-investigation I have been feeling more tired lately.
+```
+
+## Use Without Codex Or Claude Code
 
 Copy the contents of:
 
@@ -57,6 +72,12 @@ skills/
     LICENSE.txt
     agents/
       openai.yaml
+    references/
+      portable-core.md
+claude-skills/
+  health-self-investigation/
+    SKILL.md
+    LICENSE.txt
     references/
       portable-core.md
 ```
