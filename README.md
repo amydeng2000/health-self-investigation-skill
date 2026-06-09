@@ -26,7 +26,43 @@ Then restart Codex so the skill is loaded.
 
 ## Install In Claude Code
 
-Copy the Claude Code skill folder into your Claude skills directory:
+### Option A: Claude Code Plugin Marketplace
+
+This does not require cloning the repo.
+
+From a terminal:
+
+```bash
+claude plugin marketplace add amydeng2000/health-self-investigation-skill
+claude plugin install health-self-investigation@health-self-investigation
+```
+
+Or from inside Claude Code:
+
+```text
+/plugin marketplace add amydeng2000/health-self-investigation-skill
+/plugin install health-self-investigation@health-self-investigation
+```
+
+Then restart Claude Code or run `/reload-plugins`. Invoke it with:
+
+```text
+/health-self-investigation:health-self-investigation I have been feeling more tired lately.
+```
+
+### Option B: GitHub CLI Agent Skill Installer
+
+If your GitHub CLI supports `gh skill` (`gh >= 2.90.0`):
+
+```bash
+gh skill install amydeng2000/health-self-investigation-skill health-self-investigation --agent claude-code --scope user
+```
+
+If `gh` says `unknown command "skill"`, update GitHub CLI or use Option A.
+
+### Option C: Manual Fallback
+
+If you prefer a plain, non-plugin Claude Code skill, clone or download the repo and copy the Claude Code skill folder into your Claude skills directory:
 
 ```bash
 mkdir -p ~/.claude/skills
@@ -80,6 +116,17 @@ claude-skills/
     LICENSE.txt
     references/
       portable-core.md
+.claude-plugin/
+  marketplace.json
+plugins/
+  health-self-investigation/
+    .claude-plugin/
+      plugin.json
+    skills/
+      health-self-investigation/
+        SKILL.md
+        references/
+          portable-core.md
 ```
 
 ## License

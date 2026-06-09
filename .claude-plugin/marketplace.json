@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "health-self-investigation",
+  "version": "1.0.0",
+  "description": "Claude Code marketplace for the Health Self-Investigation skill.",
+  "owner": {
+    "name": "Amy Deng",
+    "url": "https://github.com/amydeng2000"
+  },
+  "plugins": [
+    {
+      "name": "health-self-investigation",
+      "displayName": "Health Self-Investigation",
+      "description": "Investigate ambiguous, non-emergency health symptoms with lightweight intake, tracking, testing, analysis, and careful experiment planning.",
+      "version": "1.0.0",
+      "source": "./plugins/health-self-investigation",
+      "repository": "https://github.com/amydeng2000/health-self-investigation-skill",
+      "license": "MIT",
+      "keywords": [
+        "health",
+        "tracking",
+        "symptoms",
+        "labs",
+        "self-investigation"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
