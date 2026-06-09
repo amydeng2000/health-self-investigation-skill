@@ -19,7 +19,7 @@ This skill is not medical advice and does not replace a clinician. It is intende
 Use `$skill-installer` with the GitHub directory URL:
 
 ```text
-$skill-installer install https://github.com/YOUR-USER/health-self-investigation-skill/tree/main/skills/health-self-investigation
+$skill-installer install https://github.com/amydeng2000/health-self-investigation-skill/tree/main/skills/health-self-investigation
 ```
 
 Then restart Codex so the skill is loaded.
