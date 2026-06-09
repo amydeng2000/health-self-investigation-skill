@@ -16,11 +16,13 @@ This skill is not medical advice and does not replace a clinician. It is intende
 
 ## Install In Codex
 
-Use `$skill-installer` with the GitHub directory URL:
+In Codex, paste this into the chat. Do not run it in your shell:
 
 ```text
 $skill-installer install https://github.com/amydeng2000/health-self-investigation-skill/tree/main/skills/health-self-investigation
 ```
+
+The `$` is part of the Codex skill invocation. It is not a shell prompt.
 
 Then restart Codex so the skill is loaded.
 
