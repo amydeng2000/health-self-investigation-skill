@@ -89,6 +89,8 @@ Paste it into ChatGPT, Claude, or another assistant's project/system instruction
 
 ## Example Prompts
 
+### Codex
+
 ```text
 Use $health-self-investigation. I've been feeling more tired lately.
 ```
@@ -99,6 +101,46 @@ Use $health-self-investigation. I have two weeks of symptom logs and want help f
 
 ```text
 Use $health-self-investigation. I want to know what experiments are safe to try for my recurring afternoon crashes.
+```
+
+### Claude Code Plugin Install
+
+If installed through the Claude Code plugin marketplace, use the plugin-qualified slash command:
+
+```text
+/health-self-investigation:health-self-investigation I've been feeling more tired lately.
+```
+
+```text
+/health-self-investigation:health-self-investigation I have two weeks of symptom logs and want help finding patterns.
+```
+
+```text
+/health-self-investigation:health-self-investigation I want to know what experiments are safe to try for my recurring afternoon crashes.
+```
+
+### Claude Code Manual Skill Install
+
+If copied manually into `~/.claude/skills`, use the skill slash command:
+
+```text
+/health-self-investigation I've been feeling more tired lately.
+```
+
+```text
+/health-self-investigation I have two weeks of symptom logs and want help finding patterns.
+```
+
+```text
+/health-self-investigation I want to know what experiments are safe to try for my recurring afternoon crashes.
+```
+
+### ChatGPT, Claude, Or Other Chat Interfaces
+
+After pasting `portable-core.md` into project/system instructions, ask naturally:
+
+```text
+I've been feeling more tired lately. Please use the health self-investigation process.
 ```
 
 ## Repository Layout
